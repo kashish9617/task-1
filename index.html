@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of Web Development</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dff5e3; /* Light green background */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            color: #12623c;
+            margin-bottom: 30px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Left text area */
+        .left {
+            width: 60%;
+        }
+
+        .left h2 {
+            color: #12623c;
+            margin-bottom: 10px;
+        }
+
+        .left h3 {
+            color: #12623c;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            margin-left: 15px;
+        }
+
+        /* Right side graphic */
+        .right {
+            width: 35%;
+            text-align: center;
+            font-size: 140px;
+            color: #ffbf00; /* yellow/orange */
+            font-weight: bold;
+        }
+
+        .code-icon {
+            font-size: 100px;
+            color: #0e6b50;
+            margin-bottom: -30px;
+        }
+
+        /* JS Button */
+        .js-button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #0e6b50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .a-button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #0e6b50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+             text-decoration:none ;
+        }
+
+        .js-button:hover {
+            background-color: #0c5a43;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <h1>Basics of Web Development</h1>
+
+        <div class="content">
+
+            <!-- LEFT SIDE -->
+            <div class="left">
+                <h2>Objective:</h2>
+                <ul>
+                    <li>Learn and apply foundational HTML, CSS, and JavaScript concepts.</li>
+                </ul>
+
+                <h2>Steps:</h2>
+
+                <h3>1. Create a Simple Webpage Using HTML</h3>
+                <ul>
+                    <li>Objective: Understand basic HTML elements and structure.</li>
+                    <li>Actions: Build a webpage with headings, paragraphs, images, and links.</li>
+                </ul>
+
+                <h3>2. Style the Webpage Using CSS</h3>
+                <ul>
+                    <li>Objective: Learn how to apply styling using CSS.</li>
+                    <li>Actions: Add colors, fonts, spacing, and layout adjustments to the webpage.</li>
+                </ul>
+
+                <h3>3. Add Basic JavaScript for Interactivity</h3>
+                <ul>
+                    <li>Objective: Implement simple interactions using JavaScript.</li>
+                    <li>Actions: Create a button that triggers an alert message when clicked.</li>
+                </ul>
+
+                <button class="js-button" onclick="showMessage()">Click Me</button>
+                <a class="a-button" href="https://www.linkedin.com/in/harshita-bankhede-b986b0332?utm_source=share_via&utm_content=profile&utm_medium=member_android ">linkedin</a>
+                <a class="a-button" href="https://github.com/bankhedeharshita-lang">join github</a>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="right">
+                <div class="code-icon">💻</div>
+                {}
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script>
+        function showMessage() {
+            alert("Hello! This is a JavaScript interaction.");
+        }
+    </script>
+
+</body>
+</html>
